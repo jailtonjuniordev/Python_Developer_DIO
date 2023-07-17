@@ -22,6 +22,11 @@ class Operacoes:
             self.contas[kw['indice']].extrato()
             s(1)
             self.limpar_prompt()    
+        elif kw['escolha'] == 5:
+            self.limpar_prompt()
+            print("Encerrando Programa...")
+            s(1)
+            sys.exit()
         
     def cpf_repetido(self, cpf):
         for i in self.contas:

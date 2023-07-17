@@ -1,6 +1,6 @@
 from service import *
 
-if __name__ == '__main__':
+def main():
     contas = []
     service = Operacoes(contas)
     service.listar_contas()
@@ -34,14 +34,11 @@ if __name__ == '__main__':
                         print("Saindo da conta...")
                         s(2)
                         break
-                    elif escolha == 5:
-                        service.limpar_prompt()
-                        print("Encerrando Programa...")
-                        s(1)
-                        print(contas[0])
-                        sys.exit()
-                    
 
-            
-    
-            
+if __name__ == '__main__':
+    #main()
+    contas = list()
+    service = Operacoes(contas)
+    service.adicionar_nova_conta("jailton", "123")
+    service.definir_escolha(escolha=2, indice=0, valor=50.0)
+    print(contas[0].saldo == 50.0)
