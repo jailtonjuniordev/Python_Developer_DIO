@@ -1,4 +1,5 @@
 import os
+import pytest
 from time import sleep as s
 from random import randint as r
 
@@ -6,6 +7,7 @@ LIMITE_SAQUE = 3
 global id_usuario
 VALOR_LIMITE_SAQUE = 500.0
 contas = list()
+
 
 def menu(id_usuario):
     while True:
