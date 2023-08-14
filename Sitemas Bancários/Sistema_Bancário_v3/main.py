@@ -36,9 +36,4 @@ def main():
                         break
 
 if __name__ == '__main__':
-    #main()
-    contas = list()
-    service = Operacoes(contas)
-    service.adicionar_nova_conta("jailton", "123")
-    service.definir_escolha(escolha=2, indice=0, valor=50.0)
-    print(contas[0].saldo == 50.0)
+    main()
